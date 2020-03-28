@@ -29,7 +29,7 @@ func main() {
 
 	frontend := detectFrontend()
 	if frontend == "" {
-		log.Fatal("No libretro frontend enabled in systemd")
+		log.Fatal("No libretro frontend found")
 	}
 
 	raspiAdaptor := raspi.NewAdaptor()
